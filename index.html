@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ALINA SMITH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.option {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+@font-face {
+  font-family: Bacalisties;
+  src: url(/Bacalisties.ttf);
+  font-weight: 15px;
+}
+
+.nowrap {
+  white-space: break-spaces ;
+}
+
+body {
+  font-family: Playfair Display;
+  margin: 0;
+  font-weight: 15;
+}
+
+.header {
+  align-items: center;
+  padding: 10px 30px;
+  text-align: center;
+  background: #8E8E8E;
+  color: #380F0F;
+  font-weight: 5;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 10;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #BEB9B9;
+  height: 55px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #9D5252;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px
+}
+
+.navbar a.left {
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  background-color: #A2A2A2;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  padding: 10px;
+  background: #8E8E8E;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    position:sticky;
+    top:0;
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <img src="/ALINA.png" style="height:200px">
+</div>
+
+<div class="navbar">
+  <a href="#" style="letter-spacing: 1px;">Resume/CV</a>
+  <a href="#" style="letter-spacing: 1px;">Portfolio</a>
+  <a href="#" style="letter-spacing: 1px;">About me</a>
+  <a href="#" style="letter-spacing: 1px;" class="left">HOMEPAGE</a>
+</div>
+
+  <div class="main">
+    <h4 style="font-family: Avenir Next Condensed; color:#5C5C5C; font-weight: 400; font-size: 20px"><i>And perhaps it is the greater grief, after all, to be left on earth when <br> another is gone.</i> - Madeline Miller, The Song of Achilles</h4>
+    <br>
+    <img src="/homepagepicture.jpg" style="height:350px">
+    <h3 style="text-align:left; letter-spacing: 1px; color:#9D5252">About me</h3>
+    <p style="text-align:left; font-family: Avenir Next Condensed; color:#535151; font-size: 17px;"><i>I’m Alina Smith, I’m 21 and I’m taking a bachelor in art at the University of Bergen. I’m originally from Ireland, but have lived in Norway since I was 5, where I was scouted by a modeling agency at the age of 12. I grew up in Stavanger where I began my modeling journey at 13. After high school I decided to move to Bergen to study while pursuing my passion for both photography and art.</i></p>
+    <h3 style="text-align:left; letter-spacing: 1px; color:#9D5252">Hobbies</h3>
+    <ul>
+    <li style="text-align:left; font-family: Avenir Next Condensed; color:#535151"><i>Reading</i></li>
+    <li style="text-align:left; font-family: Avenir Next Condensed; color:#535151"><i>Crocheting</i></li>
+    <li style="text-align:left; font-family: Avenir Next Condensed; color:#535151"><i>Gaming</i></li>
+    <li style="text-align:left; font-family: Avenir Next Condensed; color:#535151"><i>Acting</i></li>
+    <li style="text-align:left; font-family: Avenir Next Condensed; color:#535151"><i>Photography</i></li>
+  </div>
+
+<div class="footer">
+  <h4>Contact information</h4>
+  <p style="text-align:side">E-mail: alinasmith@gmail.com</p>
+</div>
+</div>
+
+</body>
+</html>
