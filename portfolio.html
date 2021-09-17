@@ -12,8 +12,8 @@
 
 .contener_slideshow
 {
-  width:300px;
-  height:300px;
+  width:500px;
+  height:500px;
   overflow: hidden;
   position: relative;
   background-image: url(http:YOUR-URL-IMAGE.png);
@@ -21,18 +21,18 @@
 .slid_1, .slid_2, .slid_3, .slid_4
 {
   position: absolute;
-  width:300px;
-  height:300px;
+  width:500px;
+  height:500px;
 }
 .slid_1{left: 0px;}
-.slid_2{left: 300px;}
-.slid_3{left: 600px;}
+.slid_2{left: 500px;}
+.slid_3{left: 1000px;}
 
-.slid_4{left: 900px;}
+.slid_4{left: 1000px;}
 .contener_slide
 {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   left:0px;
   position: absolute;
   -webkit-animation-duration: 12s;
@@ -52,37 +52,37 @@
 {
   0% {left:0px;}
   22% {left:0px;}
-  33% {left:-300px;}
-  45% {left:-300px;}
-  66% {left:-600px;}
-  90% {left:-600px;}
+  33% {left:-500px;}
+  45% {left:-500px;}
+  66% {left:-1000px;}
+  90% {left:-1000px;}
 }
 @-moz-keyframes anim_slide 
 {
   0% {left:0px;}
   22% {left:0px;}
-  33% {left:-300px;}
-  45% {left:-300px;}
-  66% {left:-600px;}
-  90% {left:-600px;}
+  33% {left:-500px;}
+  45% {left:-500px;}
+  66% {left:-1000px;}
+  90% {left:-1000px;}
 }
 @-ms-keyframes anim_slide 
 {
   0% {left:0px;}
   22% {left:0px;}
-  33% {left:-300px;}
-  45% {left:-300px;}
-  66% {left:-600px;}
-  90% {left:-600px;}
+  33% {left:-500px;}
+  45% {left:-500px;}
+  66% {left:-1000px;}
+  90% {left:-1000px;}
 }
 @keyframes anim_slide 
 {
   0% {left:0px;}
   22% {left:0px;}
-  33% {left:-300px;}
-  45% {left:-300px;}
-  66% {left:-600px;}
-  90% {left:-600px;}
+  33% {left:-500px;}
+  45% {left:-500px;}
+  66% {left:-1000px;}
+  90% {left:-1000px;}
 }
 
 .option {
@@ -125,6 +125,7 @@ body {
   position: sticky;
   width: 100%;
   top: 0;
+  z-index: 9000;
 }
 
 .navbar a {
@@ -186,6 +187,12 @@ body {
     width:100%;
   }
 }
+
+@font-face {
+  font-family: Aviano;
+  src: url(/AvianoFlareRegular.otf);
+  font-weight: 15px;
+}
 </style>
 </head>
 
@@ -199,24 +206,32 @@ body {
 <div class="navbar">
   <a href="/resume.html" style="letter-spacing: 1px;">Resume/CV</a>
   <a href="/portfolio.html" style="letter-spacing: 1px;">Portfolio</a>
-  <a href="#" style="letter-spacing: 1px;">About me</a>
+  <a href="#" style="letter-spacing: 1px;">About</a>
   <a href="/index.html" style="letter-spacing: 1px; font-weight: lighter;" class="left">HOMEPAGE</a>
 </div>
 
 <div class="main">
-    <h2 style="text-align: center;">Portfolio</h2>
-    <h3 style="text-align: center;">Career Boost</h3>
+    <h2 style="text-align: center; letter-spacing: 3px; color:#380F0F; font-size: 35px; font-weight: 100; font-family: Times New Roman;">PORTFOLIO</h2>
+    <h3 style="text-align: center; letter-spacing: 1px; color:#8D1414;">CAREER BOOST</h3>
     <div align="center">
         <div class="contener_slideshow">
           <div class="contener_slide">
-            <div class="slid_1"><img src="/images/slideshow1/image1.jpg" style="height:300px;"></div>
-            <div class="slid_2"><img src="/images/slideshow1/image2.jpg" style="height:300px;"></div>
-            <div class="slid_3"><img src="/images/slideshow1/image3.jpg" style="height:300px;"></div>
-            <div class="slid_4"><img src="/images/slideshow1/image4.jpg" style="height:300px;"></div>
+            <div class="slid_1"><img src="/images/slideshow1/image1.jpg" style="height:500px;"></div>
+            <div class="slid_2"><img src="/images/slideshow1/image2.jpg" style="height:500px;"></div>
+            <div class="slid_3"><img src="/images/slideshow1/image3.jpg" style="height:500px;"></div>
+            <div class="slid_4"><img src="/images/slideshow1/image4.jpg" style="height:500px;"></div>
           </div>    
-    <p>This project is from my first shoot with the agency Team models. The shoot consisted of trying different poses, angles, lightning and costumes. These pictures and the whole experience helped me land my first international job. This was really where I started developing as a model.</p>
         </div>
-      </div>
+     <p style="font-family: Avenir Next Condensed; font-size: 26px; color: #535151">This project is from my first shoot with the agency Team models. The shoot consisted of trying different poses, angles, lightning and costumes. These pictures and the whole experience helped me land my first international job. This was really where I started developing as a model.</p> 
+     <div align="center">
+        <div class="contener_slideshow">
+          <div class="contener_slide">
+            <div class="slid_1"><img src="/images/slideshow2/bilde1.jpeg" style="height:500px;"></div>
+            <div class="slid_2"><img src="/images/slideshow2/bilde2.jpeg" style="height:500px;"></div>
+            <div class="slid_3"><img src="/images/slideshow2/bilde3.jpeg" style="height:500px;"></div>
+            <div class="slid_4"><img src="/images/slideshow2/bilde4.jpeg" style="height:500px;"></div>
+          </div>  
+    </div>
     </div>
 
 </div>
