@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OBLIG 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.option {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+@font-face {
+  font-family: Bacalisties;
+  src: url(/Bacalisties.ttf);
+  font-weight: 15px;
+}
+
+.nowrap {
+  white-space: break-spaces ;
+}
+
+body {
+  font-family: Playfair Display;
+  margin: 0;
+  font-weight: 15;
+}
+
+.header {
+  align-items: center;
+  padding: 10px 30px;
+  text-align: center;
+  background: #8E8E8E;
+  color: #380F0F;
+  font-weight: 5;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 10;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #C3C3C3;
+  height: 55px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #9D5252;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.navbar a.left {
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  background-color: #A2A2A2;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer {
+  padding: 10px;
+  background: #8E8E8E;
+  font-family: Helvetica;
+  color: #707070;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    position:sticky;
+    top:0;
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <img src="/images/ALINA.png" style="height:200px">
+</div>
+
+<div class="navbar">
+  <a href="/resume.html" style="letter-spacing: 1px;">Resume/CV</a>
+  <a href="#" style="letter-spacing: 1px;">Portfolio</a>
+  <a href="#" style="letter-spacing: 1px;">About me</a>
+  <a href="/index.html" style="letter-spacing: 1px; font-weight: lighter;" class="left">HOMEPAGE</a>
+</div>
+
+<div class="main">
+    <h3 style="letter-spacing: 1px; color:#9D5252; font-size: 26px; font-weight: 600;">Academic Background</h3>
+    <p style="font-family: Avenir Next Condensed; color:#535151; font-size: 28px; font-weight: 200;"><i>I went to the “insert vgs”, before moving to Bergen to take a bachelor in art at the University of Bergen, where I am now finishing my last year.</i></p>
+    <h3 style="letter-spacing: 1px; color:#9D5252; font-size: 26px; font-weight: 600;">Work experience</h3>
+    <p style="font-family: Avenir Next Condensed; color:#535151; font-size: 28px; font-weight: 200;"><i>I first started working with Elementmodels in Rogaland, and was there for 2 years before I got a contract at Teammodels, a larger and more well-known agency, with whom I have worked with for 6 years now. My contract at Temmodels has helped me get further in my career and opened up for more international opportunities. Although I am very happy where I am now, I’d like to go further, challenge myself and work even more internationally.</i></p>
+    <h3 style="letter-spacing: 1px; color:#9D5252; font-size: 26px; font-weight: 600;">Languages</h3>
+    <p style="font-family: Avenir Next Condensed; color:#535151; font-size: 28px; font-weight: 200;"><i>Being born in Ireland, I speak English fluently. I learned Norwegian as I moved and being in a Norwegian school and environment led my Norwegian improving over the years. I also took French classes from middle school to high school giving me a top grade on my final exams.</i></p>
+    <h3 style="letter-spacing: 1px; color:#9D5252; font-size: 26px; font-weight: 600;">Personal skills</h3>
+    <p style="font-family: Avenir Next Condensed; color:#535151; font-size: 28px; font-weight: 200;"><i>Communication<br>Teamwork<br>Motivation<br>Flexibility<br>Resourcefulness</i></p>
+    <img src="/images/Resume.jpg" style="position: absolute;right:100px;top:795px;height:300px">
+</div>
+
+<div class="footer">
+    <h4 style="text-align: center;">Contact information</h4>
+    <p style="text-align:side">E-mail: alinasmith@gmail.com<br>Linkedlin: Alina Smith<br>Instagram: @alinasmithofficial<br>Phone: +47 12 34 56 78 </p>
+  </div>
+  </div>
+  
+  </body>
+  </html>

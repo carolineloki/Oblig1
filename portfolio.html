@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OBLIG 1</title>
+<script src="jquery-3.5.1.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.contener_slideshow
+{
+  width:300px;
+  height:300px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(http:YOUR-URL-IMAGE.png);
+}
+.slid_1, .slid_2, .slid_3, .slid_4
+{
+  position: absolute;
+  width:300px;
+  height:300px;
+}
+.slid_1{left: 0px;}
+.slid_2{left: 300px;}
+.slid_3{left: 600px;}
+
+.slid_4{left: 900px;}
+.contener_slide
+{
+  width: 300px;
+  height: 300px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 12s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 12s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 12s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-300px;}
+  45% {left:-300px;}
+  66% {left:-600px;}
+  90% {left:-600px;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-300px;}
+  45% {left:-300px;}
+  66% {left:-600px;}
+  90% {left:-600px;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-300px;}
+  45% {left:-300px;}
+  66% {left:-600px;}
+  90% {left:-600px;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-300px;}
+  45% {left:-300px;}
+  66% {left:-600px;}
+  90% {left:-600px;}
+}
+
+.option {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.text {
+    color:#707070;
+    font-size: 26px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+}
+
+body {
+  font-family: Playfair Display;
+  margin: 0;
+  font-weight: 15;
+}
+
+.header {
+  align-items: center;
+  padding: 10px 30px;
+  text-align: center;
+  background: #8E8E8E;
+  color: #380F0F;
+  font-weight: 5;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 10;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #C3C3C3;
+  height: 55px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #9D5252;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.navbar a.left {
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  background-color: #A2A2A2;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer {
+  padding: 10px;
+  background: #8E8E8E;
+  font-family: Helvetica;
+  color: #707070;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    position:sticky;
+    top:0;
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+  <img src="/images/ALINA.png" style="height:200px">
+</div>
+
+<div class="navbar">
+  <a href="/resume.html" style="letter-spacing: 1px;">Resume/CV</a>
+  <a href="#" style="letter-spacing: 1px;">Portfolio</a>
+  <a href="#" style="letter-spacing: 1px;">About me</a>
+  <a href="/index.html" style="letter-spacing: 1px; font-weight: lighter;" class="left">HOMEPAGE</a>
+</div>
+
+<div class="main">
+    <h2 style="text-align: center;">Portfolio</h2>
+    <h3 style="text-align: center;">Career Boost</h3>
+    <div align="center">
+        <div class="contener_slideshow">
+          <div class="contener_slide">
+            <div class="slid_1"><img src="/images/slideshow1/image1.jpg" style="height:300px;"></div>
+            <div class="slid_2"><img src="/images/slideshow1/image2.jpg" style="height:300px;"></div>
+            <div class="slid_3"><img src="/images/slideshow1/image3.jpg" style="height:300px;"></div>
+            <div class="slid_4"><img src="/images/slideshow1/image4.jpg" style="height:300px;"></div>
+          </div>
+          
+    <p>This project is from my first shoot with the agency Team models. The shoot consisted of trying different poses, angles, lightning and costumes. These pictures and the whole experience helped me land my first international job. This was really where I started developing as a model.</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <h4 style="text-align: center;">Contact information</h4>
+    <p style="text-align:side">E-mail: alinasmith@gmail.com<br>Linkedlin: Alina Smith<br>Instagram: @alinasmithofficial<br>Phone: +47 12 34 56 78 </p>
+  </div>
+  </div>
+  
+  </body>
+  </html>
